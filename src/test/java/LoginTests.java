@@ -8,7 +8,7 @@ import pages.LoginPage;
 public class LoginTests extends BaseTest {
 
     //    @Test(enabled = true, priority = 0, description = "LoginEmptyEmailPasswordTest")
-    @Test(enabled = false, dataProvider = "incorrectLoginProviders", dataProviderClass = BaseTest.class)
+    @Test(enabled = true, dataProvider = "incorrectLoginProviders", dataProviderClass = BaseTest.class)
     public void loginEmptyEmailPasswordTest (String email, String password) {
         LoginPage loginPage = new LoginPage(getDriver());
 
