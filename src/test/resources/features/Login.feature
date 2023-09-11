@@ -16,14 +16,14 @@ Feature: Login feature
     And I submit
     Then I am logged in
 
-#  Scenario Outline: Login with various input
-#    Given I open Login Page
-#    When I enter email <username>
-#    And I enter password <password>
-#    And I submit
-#    Then I am logged in
-#    Examples: various login input
-#      | username          | password    |
-#      | demo@class.com    | te$t$tudent |
-#      | invalid@class.com | te$t$tudent |
+  Scenario Outline: Login with various input
+    Given I open Login Page
+    When I enter email <username>
+    And I enter password <password>
+    And I submit
+    Then I am logged in
+    Examples: various login input
+      | username          | password    |
+      | demo@class.com    | te$t$tudent |
+      | invalid@class.com | te$t$tudent |
 
